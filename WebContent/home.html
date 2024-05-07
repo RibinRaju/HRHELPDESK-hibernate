@@ -1,0 +1,88 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5ed4f2;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 100px;
+            background-color: #5ed4f2;
+            border-radius: 5px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 14px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 40px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HR HELP DESK</h2>
+        <form action="login" method="get" >
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" >
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+            <label for="role">Role:</label>
+            <select id="role" name="role" value="Rolw">
+                <option value="" disabled selected>-- Select Role --</option>
+                <option value="admin">Admin</option>
+                <option value="hr">HR</option>
+                <option value="employee">Employee</option>
+            </select>
+            <input type="submit" value="Login">
+           <center><a href="forgetpassword.html">forgot password</a></center> 
+        </form>
+    </div>
+    <!-- <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent the form from submitting normally
+            
+            var role = document.getElementById('role').value;
+            var nextPage = '';
+            a
+            switch (role) {
+                case 'admin':
+                    nextPage = 'hradmin.html';
+                    break;
+                case 'hr':
+                    nextPage = 'hr_solution.html';
+                    break;
+                case 'employee':
+                    nextPage = 'ticketraisingform.html';
+                    break;
+                default:
+                    nextPage = 'error.html';
+            }
+
+           // window.location.href = nextPage; // redirect to the next page
+        });
+    </script> -->
+
+</body>
+</html>

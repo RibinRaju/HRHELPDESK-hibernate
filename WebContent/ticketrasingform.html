@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise a Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cyan;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], textarea, select, input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Raise a Ticket</h2>
+        <form action="submit_ticket" method="get">
+            
+            <label for="due_date">Due Date:</label>
+            <input type="date" id="due_date" name="due_date">
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Finance">Finance</option>
+                <option value="information technology">IT</option>
+                <option value="hr">HR</option>
+                <option value="legal">Legal</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="description">Title:</label>
+            <input type="text" id="tile" name="title">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+           
+
+            
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="container"><a href="previoustickets">previoustickets</a></div>
+</body>
+</html>
